@@ -1,11 +1,18 @@
 # Android MVVM Commons
 
 Helper classes to implement MVVM in Android with less common code
-- ##### Error handling
-- ##### Progress indication
-- ##### View lifecycle handling
-- ##### View components
-- ##### View layer dependency container
+
+
+- Error handling
+
+- Progress indication
+
+- View lifecycle handling
+
+- View components
+
+- View layer dependency container
+
 
 
 #### Error handling

@@ -75,7 +75,7 @@ All the fragments which use a single view model variable bound to the xml have t
             return BR.viewModel;
         }
         @Override
-        protected HoursMemberListVM onCreateVM() {
+        protected MyViewModel onCreateVM() {
             return new MyViewModel();
         }
 

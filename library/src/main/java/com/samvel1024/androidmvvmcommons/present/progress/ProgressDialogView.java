@@ -16,10 +16,12 @@ import android.util.Log;
  */
 public class ProgressDialogView implements ProgressIndicatorView {
 
+    private final String message;
     private ProgressDialog progressDialog;
     private final Context context;
 
-    public ProgressDialogView(Context context) {
+    public ProgressDialogView(Context context, String message) {
+        this.message = message;
         this.context = context;
     }
 
@@ -27,7 +29,7 @@ public class ProgressDialogView implements ProgressIndicatorView {
     public void onShowProgress() {
         if (progressDialog == null) {
             progressDialog = new ProgressDialog(context);
-            progressDialog.setMessage("Loading...");
+            progressDialog.setMessage(message);
             progressDialog.setIndeterminate(true);
             progressDialog.setCancelable(false);
         }

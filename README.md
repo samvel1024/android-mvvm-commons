@@ -91,7 +91,7 @@ All the fragments which use a single view model variable bound to the xml have t
 
 When using a fragment which is a standalone piece of UI and needs to be displayed in a separate activity, the class `FragmentHolderActivity` can be used. However if there is needed any customization and interaction between the activity the usage of this class is not encouraged.
 
-            FragmentHolderActivity.launch(getContext(), MyFragment.class, MyFragment.createArgs(consultant));
+    FragmentHolderActivity.launch(getContext(), MyFragment.class, MyFragment.createArgs(consultant));
 
 ### View layer dependency container
 In order to avoid using complex DI injectors a little POJO can be written to contain all the data layer services to provide a way for creating mock testable app instances. However if the service classes are heavy and long to instantiate this method should be avoided.
